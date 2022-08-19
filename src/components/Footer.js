@@ -1,11 +1,13 @@
-import './App.css';
+import React from "react";
+import { Container, Divider, Header } from "semantic-ui-react";
 
-function Footer() {
+export default function Footer() {
     return (
-        <div className="Footer">
-            <label>This is my label</label>
-        </div>
+        <Container className="py-5">
+            <Divider />
+            <Header size="tiny" textAlign="center">
+                &copy; 2020, Stack Media, Penta Core
+            </Header>
+        </Container>
     );
 }
-
-export default App;
